@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+.checked {
+  @extend %flex-center;
+  flex-direction: column;
+  color: $black;
+
+  .checked__icon {
+    font-size: 55px;
+  }
+
+  .checked__title {
+    font-size: 26px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}

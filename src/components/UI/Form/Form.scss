@@ -1,0 +1,67 @@
+@import "styles/variables.scss";
+
+.form {
+  padding: 17px 40px 69px 40px;
+  background: $white;
+  border-radius: 24px;
+  min-width: 320px;
+
+  &.form_status {
+    padding: 0;
+    width: 400px;
+    height: 500px;
+    @extend %flex-center-center;
+  }
+
+  .form__offer {
+    margin-top: 30px;
+    @extend %flex-left;
+    flex-direction: column;
+
+    .form__title {
+      margin-bottom: 20px;
+    }
+
+    .form__block {
+      margin-bottom: 20px;
+      width: 100%;
+      box-sizing: border-box;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .form__label {
+        color: $blue;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 6px;
+        display: block;
+      }
+
+      .form__input {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &.form__input_double {
+          @extend %flex-center-between;
+        }
+
+        &.form__input_double-small {
+          @extend %flex-left;
+
+          .form__double-block {
+            margin-right: 30px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

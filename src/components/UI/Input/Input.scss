@@ -1,0 +1,31 @@
+@import "styles/variables.scss";
+
+.input {
+  background: $white;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  border-style: none;
+  border: 1px solid $input-backg;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  letter-spacing: 0.9px;
+
+  &.input_double {
+    width: 180px;
+  }
+
+  &.input_error {
+    border-color: $red;
+  }
+
+  &.input_small {
+    width: 100px;
+  }
+
+  &:-ms-input-placeholder {
+    color: $grey;
+  }
+}

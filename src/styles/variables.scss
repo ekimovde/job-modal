@@ -1,0 +1,38 @@
+$main-backg: #f6f8ff;
+$btn-backg: #19a527;
+$btn-backg-dark: #148d21;
+$input-backg: #dedcdc;
+
+$white: #fff;
+$blue: #101d94;
+$black: #000;
+$red: #ffadad;
+$grey: #6b6b6b;
+$grey-light: #979797;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-left {
+  display: flex;
+  align-items: flex-start;
+}
+
+%flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,37 @@
+@import "styles/variables.scss";
+
+.nav-history {
+  @extend %flex-center;
+
+  .nav-history__title {
+    color: $grey-light;
+    cursor: pointer;
+    @extend %flex-center;
+    margin-right: 10px;
+
+    &.nav-history__title_active {
+      color: $blue;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-top: 1px solid $grey-light;
+      border-right: 1px solid $grey-light;
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .nav-history__icon {
+    color: $grey-light;
+    font-size: 32px;
+  }
+}

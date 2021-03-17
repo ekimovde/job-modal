@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+.btn {
+  background-color: $btn-backg;
+  color: $white;
+  border-radius: 6px;
+  width: 180px;
+  text-align: center;
+  border-style: none;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $btn-backg-dark;
+  }
+}
